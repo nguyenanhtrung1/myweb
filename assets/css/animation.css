@@ -1,0 +1,337 @@
+@media (min-width: 500px) and (max-width: 1050px) {
+  .header {
+    font-size: 22px;
+  }
+  .header .left {
+    display: none;
+  }
+  .header .right {
+    width: 100%;
+  }
+  .header .right ul {
+    width: 100%;
+  }
+  .header .right .image-icon {
+    margin-left: 65px;
+    margin-right: -26px;
+  }
+  .header .right li {
+    display: inline-block;
+    width: 100px;
+    margin-left: 25px;
+  }
+  .header .right i {
+    margin-left: 30px;
+    width: 30px;
+  }
+  .header .right li p:first-child {
+    width: 190px;
+  }
+  .header .right li p:not(:first-child) {
+    width: 100px;
+  }
+  .form .form-close i {
+    font-size: 3rem;
+  }
+  .form_registration .form {
+    width: 70%;
+    height: 70%;
+  }
+  .form .header-form {
+    height: 30%;
+  }
+  .form .header-form h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3rem;
+  }
+  .form .header-form h3 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .form .body-form label {
+    font-size: 2rem;
+  }
+  .form .body-form input {
+    height: 70px;
+  }
+  .form .form-submit {
+    height: 110px;
+    font-size: 2rem;
+  }
+  .form .footer-form p {
+    font-size: 1.7rem;
+  }
+  .login .form2 {
+    width: 70%;
+    height: 70%;
+  }
+  .form2 .login-close i {
+    font-size: 3rem;
+  }
+  .form2 .header-login {
+    height: 30%;
+  }
+  .form2 .header-login h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3rem;
+  }
+  .form2 .header-login h3 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .form2 .secson label {
+    font-size: 1.9rem;
+  }
+  .form2 .secson input {
+    height: 70px;
+  }
+  .form2 .login-submit {
+    height: 110px;
+    font-size: 2rem;
+  }
+  .form2 .footer-login {
+    font-size: 1.5rem;
+  }
+  .form2 .connect-login {
+    width: 70%;
+    height: 80px;
+  }
+  .form2 .connect-login h1 {
+    font-size: 3.5rem;
+  }
+  .form2 .connect-with {
+    width: 100%;
+    height: 250px;
+  }
+  .form2 .connect-with li {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .form2 .connect-with li .icon-login {
+    padding: 15px;
+  }
+  .search {
+    margin-top: 9%;
+    height: 60px;
+  }
+  .icon_search {
+    font-size: 19px;
+    width: 40px;
+    height: 40px;
+  }
+  .slider {
+    display: block;
+    width: 96%;
+  }
+  .slider .slide img {
+    padding-top: 13px;
+    padding-left: 37px;
+  }
+  .slider .info h1 {
+    display: none;
+  }
+  .slider .info p {
+    display: none;
+  }
+  .menu {
+    height: 70px;
+  }
+  .menu .header-menu-left {
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .menu .right ul {
+    width: 100%;
+    height: 65px;
+    position: relative;
+    overflow: hidden;
+  }
+  .menu .right ul li {
+    width: 130px;
+    height: 40px;
+    display: inline-block;
+  }
+  .menu .right li a {
+    height: 40px;
+    width: 130px;
+  }
+  .menu .right li p {
+    display: inline-block;
+  }
+  .filter .left {
+    width: 22%;
+    overflow-y: none;
+    border-right: 3px solid rgb(26, 148, 255);
+    height: 89.5rem;
+    text-align: center;
+  }
+  .filter .right {
+    width: 75%;
+  }
+  .filter .right .main-product-iphone li {
+    width: 200px;
+    height: 311px;
+  }
+  .bestseller {
+    margin: 50px 0;
+    width: 100%;
+    height: 450px;
+    margin-top: 30%;
+  }
+  .bestseller .header-bestseller h2 {
+    text-align: center;
+  }
+  .bestseller .main-bestseller li {
+    width: 160px;
+    height: 250px;
+    margin-top: 40px;
+  }
+  .bestseller .main-bestseller li img {
+    width: 160px;
+  }
+  .bestseller .end-bestseller li {
+    width: 160px;
+    margin-top: -39px;
+  }
+  .bestseller .end-bestseller li p {
+    text-align: center;
+  }
+  .address-store h1 {
+    height: 20px;
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 285px;
+  }
+  .header-footer ul {
+    display: inline-block;
+    width: 20%;
+    height: 20px;
+    font-size: 1.2rem;
+  }
+  .header-footer ul:not(:first-child) {
+    margin-left: 50px;
+  }
+  .footer .header-footer-1 h2 {
+    font-size: 1.3rem;
+  }
+  .footer .header-footer-2 h2 {
+    font-size: 1.3rem;
+  }
+  .main-footer {
+    padding-left: 350px;
+  }
+  .main-footer li {
+    height: 40px;
+    width: 500px;
+  }
+
+  .main-footer ul:last-child {
+    display: none;
+  }
+  .main-footer li h2 {
+    padding-top: 10px;
+  }
+  .footer-footer {
+    display: none;
+  }
+  .form-product .main-form-product {
+    width: 90%;
+    position: relative;
+  }
+  .main-form-product .close-product {
+    font-size: 3rem;
+  }
+  .main-form-product .left-form-product {
+    width: 100%;
+  }
+  .left-form-product .first-img-product {
+    min-width: 620px;
+    margin-left: 17%;
+    margin-top: 50px;
+  }
+
+  .left-form-product .change-img {
+    min-width: 620px;
+    margin-left: 17%;
+    margin-top: 80px;
+  }
+  .left-form-product ul {
+    width: 100%;
+    height: 70px;
+  }
+  .left-form-product ul h2 {
+    width: 230px;
+    height: 100px;
+    font-size: 3rem;
+  }
+  .left-form-product li {
+    width: 60px;
+    height: 60px;
+  }
+  .left-form-product .price-product {
+    height: 90px;
+  }
+  .left-form-product .price-product .discount {
+    font-size: 3rem;
+  }
+  .left-form-product .price-product .cost {
+    font-size: 3rem;
+  }
+  .left-form-product .price-product .costs {
+    font-size: 3rem;
+  }
+  .right-form-product h1 {
+    position: absolute;
+    top: 0;
+    padding-left: 80px;
+    font-size: 3.6rem;
+  }
+  .last-main-product {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    bottom: 10px;
+  }
+  .last-main-product h3 {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  .right-product-item1 li {
+    font-size: 2.5rem;
+    margin-left: 40px;
+  }
+  .right-product-item2 {
+    width: 100%;
+    height: 500px;
+  }
+  .right-product-item2 li {
+    left: -270px;
+  }
+}
+@keyframes registration {
+  from {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes lefttoright {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}

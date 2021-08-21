@@ -677,7 +677,7 @@
 .footer .header-footer ul {
   display: inline-block;
   padding-left: 3%;
-  width: 20%;
+  width: 19%;
   height: 200px;
   overflow: hidden;
 }
@@ -685,16 +685,14 @@
   font-size: 1.2rem;
 }
 .footer .header-footer .header-footer-1 li {
-  padding-bottom: 30px;
+  padding-bottom: 8%;
 }
 .footer .header-footer .header-footer-1 li h3 {
   font-size: 1.8rem;
   color: rgb(230, 245, 18);
 }
-
 .footer .header-footer .header-footer-2 {
   font-size: 1.1rem;
-  padding-top: 30px;
 }
 .footer .header-footer .header-footer-2 li {
   padding-top: 8px;

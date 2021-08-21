@@ -677,7 +677,7 @@
 .footer .header-footer ul {
   display: inline-block;
   padding-left: 3%;
-  width: 19%;
+  width: 17.5%;
   height: 200px;
   overflow: hidden;
 }
@@ -686,6 +686,7 @@
 }
 .footer .header-footer .header-footer-1 li {
   padding-bottom: 8%;
+  padding-top: 8px;
 }
 .footer .header-footer .header-footer-1 li h3 {
   font-size: 1.8rem;

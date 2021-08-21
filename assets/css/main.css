@@ -559,7 +559,9 @@
   margin: 2% auto;
   position: relative;
 }
-
+.bestseller .header-bestseller {
+  margin-left: 25%;
+}
 .bestseller .header-bestseller h2 {
   position: absolute;
   width: 50%;
@@ -675,9 +677,10 @@
 .footer .header-footer ul {
   display: inline-block;
   padding-left: 3%;
-  width: 19%;
+  width: 20%;
+  height: 200px;
+  overflow: hidden;
 }
-
 .footer .header-footer .header-footer-1 {
   font-size: 1.2rem;
 }

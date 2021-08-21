@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 .header .left {
-  width: 55%;
+  width: 47%;
   height: 100%;
   float: left;
   line-height: center;
@@ -33,7 +33,7 @@
 .header .right {
   float: right;
   display: flex;
-  width: 45%;
+  width: 53%;
   padding-top: 11px;
 }
 .header .right .image-icon {
@@ -145,6 +145,7 @@
   max-height: 350px;
   margin: 20px;
   border-radius: 10px;
+  overflow: hidden;
 }
 .slider .slide {
   position: absolute;
@@ -281,12 +282,12 @@
 .menu .right {
   width: 75%;
   height: 100%;
-  display: flex;
+  display: inline-block;
   align-items: center;
   cursor: pointer;
 }
 .menu .right li {
-  padding: 0 22px;
+  padding: 0 2%;
   color: white;
   line-height: 65px;
   display: inline-block;
@@ -383,7 +384,7 @@
 }
 .header-product {
   width: 95%;
-  height: 4.5%;
+  height: 50px;
   background: linear-gradient(to right, #fd7607, #f73c40);
   margin: 5px 25px;
   display: flex;
@@ -403,12 +404,13 @@
   display: inline-block;
   border: 1px solid grey;
   height: 350px;
-  margin-left: 25px;
-  margin-bottom: 25px;
+  margin-left: 2.1%;
+  margin-bottom: 2%;
   margin-top: 10px;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  width: 22%;
 }
 
 .main-product-iphone li h3 {
@@ -451,6 +453,7 @@
   align-items: center;
   font-size: 1.5rem;
   color: white;
+  bottom: 0;
 }
 .main-product-iphone li img {
   max-width: 260px;
@@ -556,9 +559,7 @@
   margin: 2% auto;
   position: relative;
 }
-.bestseller .header-bestseller {
-  margin: 0 25%;
-}
+
 .bestseller .header-bestseller h2 {
   position: absolute;
   width: 50%;
@@ -577,7 +578,7 @@
   margin-top: 5%;
 }
 .bestseller .main-bestseller li {
-  width: 250px;
+  width: 17.32%;
   display: inline-block;
   background-color: white;
   margin-left: 6%;
@@ -586,7 +587,7 @@
   cursor: pointer;
 }
 .bestseller .main-bestseller li img {
-  max-width: 250px;
+  max-width: 100%;
 }
 .bestseller .main-bestseller li img:hover {
   transform: scale(1.1);
@@ -604,7 +605,7 @@
   bottom: 4%;
 }
 .bestseller .end-bestseller li {
-  width: 250px;
+  width: 17.32%;
   display: inline-block;
   background-color: rgb(26, 148, 255);
   margin-left: 6%;
@@ -674,7 +675,9 @@
 .footer .header-footer ul {
   display: inline-block;
   padding-left: 3%;
+  width: 19%;
 }
+
 .footer .header-footer .header-footer-1 {
   font-size: 1.2rem;
 }
@@ -701,17 +704,18 @@
 }
 .footer .main-footer ul {
   display: inline-block;
-  padding-left: 3%;
+  padding-left: 2%;
+  width: 33%;
 }
 .footer .main-footer ul h2 {
   padding-left: 1.5%;
 }
 .footer .main-footer .input-footer {
   height: 40px;
-  width: 450px;
+  width: 100%;
   border: none;
   outline: none;
-  padding-left: 17px;
+  padding-left: 3%;
 }
 .footer .main-footer li {
   padding-top: 3px;

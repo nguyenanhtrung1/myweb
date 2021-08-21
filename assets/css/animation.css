@@ -168,7 +168,7 @@
     width: 22%;
     overflow-y: none;
     border-right: 3px solid rgb(26, 148, 255);
-    height: 89.5rem;
+    height: 87.5rem;
     text-align: center;
   }
   .filter .right {
@@ -224,15 +224,19 @@
     font-size: 1.3rem;
   }
   .main-footer {
-    padding-left: 350px;
+    padding-left: 190px;
   }
-  .main-footer li {
-    height: 40px;
-    width: 500px;
+  .main-footer ul li {
+    width: 370px;
   }
-
-  .main-footer ul:last-child {
-    display: none;
+  .main-footer ul li h2 {
+    margin-left: 126px;
+  }
+  .main-footer ul li .input-footer {
+    margin-left: 126px;
+  }
+  .main-footer ul li i {
+    margin-left: 120px;
   }
   .main-footer li h2 {
     padding-top: 10px;

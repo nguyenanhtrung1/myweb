@@ -261,5 +261,10 @@ change_categorys.forEach((change_category,index) => {
     }
 }); 
 
-//back-top
+//new-tap-product
 
+const new_tap_product = selectAll('.last-main-product');
+
+new_tap_product.onclick = () => {
+    location.href='./buy-product.html';
+}

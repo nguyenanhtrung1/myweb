@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buy-product</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/buy-product.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/on_off.css" />
+    <link href="./assets/fontawesome-free-5.15.3-web/css/all.min.css" rel="stylesheet">
+</head>
+<body onload="time()">
+    <div  class="header">
+        <div class="grid">
+                <div class="left">
+                    <ul>
+                        <i class="fas fa-history"></i>
+                        <li class="clock"></li>
+                        <li class="connect">Liên Kết</li>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram-square"></i>
+                        <i class="fas fa-envelope-square"></i>
+                    </ul>
+                </div>	
+                <div class="right">   
+                    <ul>
+                        <img src="./assets/image/tai_khoan.png" alt="" class="image-icon">
+                        <li>
+                            <p class="myaccount">Tài khoản của tôi</p>
+                        </li>
+                        <img src="./assets/image/gio_hang.png" alt="" class="image-icon">
+                        <li>
+                            <p class="mylove">Giỏ Hàng</p>
+                        </li>
+                        <i class="fas fa-sign-in-alt"></i>
+                        <li >
+                            <p class="js-login">Đăng Nhập</p>
+                        </li>
+                        <i class="fas fa-user-plus"></i>
+                        <li>
+                            <p class="js-log-in">Đăng kí</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div class="back-index">
+        <h2>Quay Lại Trang Chủ</h2>
+    </div>
+    <div class="form_registration ">
+        <form action="" method="POST" class="form" id="form-1">
+            <div class="form-close">
+                <i class="far fa-window-close"></i>
+            </div>
+            <div class="header-form">
+                <h1 class="heading">Thành viên đăng ký</h1>
+                <h3 class="desc">Hãy đăng kí để trải nghiệm sản phẩm một cách tốt nhất❤️</h3>
+            </div>
+            <div class="body-form">
+                <div class="form-dki">
+                    <label for="fullname" class="form-label">Tên đầy đủ</label>
+                    <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyễn Anh Trung" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-dki">
+                    <label for="phone" class="form-label">Your phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="VD: 0898357214" class="form-control">
+                    
+                </div>
+    
+                <div class="form-dki">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                    
+                </div>
+    
+                <div class="form-dki">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                    
+                </div>
+    
+                <div class="form-dki">
+                    <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                    <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                    
+                </div>
+    
+                <button class="form-submit">Đăng ký</button>
+            </div>
+            
+            <div class="footer-form">
+                <p class="form-help">Need <a href="">Help?</a></p>
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class="login">
+        <form action="" method="POST" class="form2" id="form-2">
+            <div class="login-close">
+                <i class="far fa-window-close"></i>
+            </div>
+            <div class="header-login">
+                <h1 class="head">Thành viên đăng Nhập</h1>
+                <h3 class="descc">Hãy đăng nhập để mua sắm sản phẩm dễ dàng nhé❤️</h3>
+            </div>
+    
+            <div class="secson">
+                <div class="secson-login">
+                    <label for="text" class="login-text">Tài khoản</label>
+                    <input id="text" name="text" type="text" placeholder="Nhập tài khoản" class="form-login">
+                </div>
+                <div class="secson-login">
+                    <label for="password1" class="login-text">Nhập mật khẩu</label>
+                    <input id="password1" name="password" placeholder="Nhập mật khẩu" type="password" class="form-login">
+                </div>
+                <button class="login-submit">Đăng Nhập</button>
+            </div>
+            <div class="footer-login">
+                <p class="login-help">Need <a href="">Help?</a></p>
+            </div>
+            <div class="connect-login">
+                <h1>Hoặc</h1>
+            </div>
+            <div class="connect-with">
+                <ul>
+                    <li><div class="icon-login">Login with Facebook <i class="fab fa-facebook"></i></div></li>              
+                    <li><div class="icon-login">Login with Instagram <i class="fab fa-instagram-square"></i></div></li>        
+                    <li><div class="icon-login">Login with Gmail <i class="fas fa-envelope-square"></i></div></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <div class="qvsa open-menu-question2">
+        <i class="fab fa-facebook-messenger mess "></i>
+    </div>
+    
+
+    <div class="write-question menu-question">
+        <div class="header-question ">
+            <i class="fas fa-window-close close-menu-question"></i>
+            <h4>Chúng tôi sẽ phản hồi bạn trong thời gian sớm nhất</h4>
+            
+        </div>
+        <div class="main-question">
+            <i class="fas fa-user-shield"></i>
+            <h5>Tôi có thể hỗ trợ thông tin gì cho bạn?</h5>
+        </div>
+        <input class="input-question" type="text" placeholder="Nhập câu hỏi...">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./javascrip/buy-product.js"></script>
+    <script src="./javascrip/jquery.js"></script>
+</body>
+</html>

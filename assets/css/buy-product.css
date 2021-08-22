@@ -1,0 +1,14 @@
+.back-index {
+  margin-top: 100px;
+  width: 17%;
+  height: 45px;
+  background: linear-gradient(to right, rgb(34, 247, 5), rgb(26, 148, 255));
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.mess {
+  margin-right: 2%;
+}

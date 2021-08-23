@@ -2,6 +2,8 @@
 const selectAll = document.querySelector.bind(document);
 const selectAlls = document.querySelectorAll.bind(document); 
 
+//form-registion
+
 const open_registration = selectAll('.js-log-in');
 const form_registration = selectAll('.form_registration');
 const close_registration = selectAll('.form-close');
@@ -22,6 +24,85 @@ registration_bubbleSort.addEventListener('click', (event) => {
     event.stopPropagation();
 })
 
+const form = document.getElementById('form1');
+const fullName = document.getElementById('fullname');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const password_confirmation = document.getElementById('password_confirmation');
+
+form.addEventListener('submit', (event) =>{
+    event.preventDefault();
+
+    checkInputs();
+});
+
+function checkInputs(){
+    const fullNameValue = fullName.value.trim();
+    const phoneValue = phone.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password_confirmationValue = password_confirmation.value.trim();
+
+    if(fullNameValue === ''){
+        setErrorFor(fullName, 'Tên người dùng không được để trống!');
+    }
+    else{
+        setSuccessFor(fullName);
+    }
+
+    if(phoneValue === ''){
+        setErrorFor(phone, 'Số điện Thoại không được để trống!');
+    }
+    else{
+        setSuccessFor(phone);
+    }
+
+    if(emailValue === ''){
+        setErrorFor(email, 'Email không được để trống!');
+    }
+    else if(!isEmail(emailValue)){
+        setErrorFor(email, 'Email không hợp lệ (@gmail.com)!');
+    }
+    else{
+        setSuccessFor(email);
+    }
+
+    if(passwordValue === ''){
+        setErrorFor(password,'Mật khẩu không chính xác, vui lòng nhập lại!');
+    }
+    else{
+        setSuccessFor(password);
+    }
+
+    if(password_confirmationValue === ''){
+        setErrorFor(password_confirmation, 'Vui lòng nhập lại mật khẩu!')
+    }
+    else if(password_confirmationValue !== passwordValue){
+        setErrorFor(password_confirmation, 'Nhập lại mật khẩu không đúng!')
+    }
+    else{
+        setSuccessFor(password_confirmation);
+    }
+}
+function setErrorFor(input, message){
+    const formControl = input.parentElement;
+    const p = formControl.querySelector('p');
+
+    p.innerText = message;
+
+    formControl.className = 'form-dki error';
+
+}
+function setSuccessFor(input){
+    const formControl = input.parentElement;
+
+    formControl.className = 'form-dki success';
+
+}
+function isEmail(email){
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
 // form-login
 
 const open_login = selectAll('.js-login');
@@ -43,6 +124,7 @@ form_login.addEventListener('click',() => {
 login_bubbleSort.addEventListener('click', (event) => {
     event.stopPropagation();
 })
+
 
 //time
 

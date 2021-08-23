@@ -43,9 +43,41 @@
   padding: 10px;
   cursor: pointer;
 }
-.body-form {
+.form-dki {
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+}
+.form-dki i {
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  font-size: 1.4rem;
+  visibility: hidden;
+}
+.form-dki p {
+  visibility: hidden;
+}
+.form-dki input {
+  outline: none;
+}
+.form-dki.success input {
+  border-color: rgb(12, 224, 12);
+}
+.form-dki.error input {
+  border-color: rgb(253, 41, 41);
+}
+.form-dki.success i.fa-check-circle {
+  color: rgb(12, 224, 12);
+  visibility: visible;
+}
+.form-dki.error i.fa-exclamation-circle {
+  color: rgb(253, 41, 41);
+  visibility: visible;
+}
+.form-dki.error p {
+  color: rgb(253, 41, 41);
+  visibility: visible;
 }
 .form-label {
   display: block;
@@ -130,6 +162,40 @@
   padding-left: 22px;
   padding-right: 22px;
 }
+.secson-login {
+  position: relative;
+}
+.secson-login i {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  font-size: 1.4rem;
+  visibility: hidden;
+}
+.secson-login p {
+  visibility: hidden;
+}
+.secson-login input {
+  outline: none;
+}
+.secson-login.success input {
+  border-color: rgb(12, 224, 12);
+}
+.secson-login.error input {
+  border-color: rgb(253, 41, 41);
+}
+.secson-login.success i.fa-check-circle {
+  color: rgb(12, 224, 12);
+  visibility: visible;
+}
+.secson-login.error i.fa-exclamation-circle {
+  color: rgb(253, 41, 41);
+  visibility: visible;
+}
+.secson-login.error p {
+  color: rgb(253, 41, 41);
+  visibility: visible;
+}
 .footer-login a {
   color: rgb(48, 203, 230);
 }
@@ -193,14 +259,6 @@
   position: relative;
   top: 0px;
   font-size: 25px;
-}
-.photo-account {
-  position: fixed;
-  width: 830px;
-  height: 520px;
-  margin: 0 350px;
-  border: 5px solid rgb(26, 148, 255);
-  display: none;
 }
 
 .qvsa .mess {

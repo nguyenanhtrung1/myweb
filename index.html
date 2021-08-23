@@ -786,7 +786,7 @@
     </div>
      <!-- ************************************************************************************************************************************************ -->
     <div class="form_registration ">
-        <form action="" method="POST" class="form" id="form-1">
+        <form action="" method="POST" class="form" id="form1">
             <div class="form-close">
                 <i class="far fa-window-close"></i>
             </div>
@@ -795,34 +795,44 @@
                 <h3 class="desc">Hãy đăng kí để trải nghiệm sản phẩm một cách tốt nhất❤️</h3>
             </div>
             <div class="body-form">
-                <div class="form-dki">
+                <div class="form-dki ">
                     <label for="fullname" class="form-label">Tên đầy đủ</label>
                     <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyễn Anh Trung" class="form-control">
-                    <span class="form-message"></span>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Thông báo lỗi</p>
                 </div>
     
-                <div class="form-dki">
+                <div class="form-dki ">
                     <label for="phone" class="form-label">Your phone</label>
                     <input id="phone" name="phone" type="tel" placeholder="VD: 0898357214" class="form-control">
-                    
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Thông báo lỗi</p>
                 </div>
     
-                <div class="form-dki">
+                <div class="form-dki ">
                     <label for="email" class="form-label">Email</label>
                     <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
-                    
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Thông báo lỗi</p>
                 </div>
     
-                <div class="form-dki">
+                <div class="form-dki ">
                     <label for="password" class="form-label">Mật khẩu</label>
                     <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
-                    
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Thông báo lỗi</p>
                 </div>
     
-                <div class="form-dki">
+                <div class="form-dki ">
                     <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
                     <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
-                    
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Thông báo lỗi</p>
                 </div>
     
                 <button class="form-submit">Đăng ký</button>
@@ -836,7 +846,7 @@
     </div>
 
     <div class="login">
-        <form action="" method="POST" class="form2" id="form-2">
+        <form action="" method="POST" class="form2" id="form2">
             <div class="login-close">
                 <i class="far fa-window-close"></i>
             </div>
@@ -846,13 +856,19 @@
             </div>
     
             <div class="secson">
-                <div class="secson-login">
+                <div class="secson-login success">
                     <label for="text" class="login-text">Tài khoản</label>
                     <input id="text" name="text" type="text" placeholder="Nhập tài khoản" class="form-login">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+			        <p>Thông Báo lỗi</p>
                 </div>
-                <div class="secson-login">
+                <div class="secson-login error">
                     <label for="password1" class="login-text">Nhập mật khẩu</label>
                     <input id="password1" name="password" placeholder="Nhập mật khẩu" type="password" class="form-login">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Thông báo lỗi</p>
                 </div>
                 <button class="login-submit">Đăng Nhập</button>
             </div>
@@ -960,7 +976,6 @@
         <i class="fab fa-facebook-messenger mess "></i>
     </div>
     
-
     <div class="write-question menu-question">
         <div class="header-question ">
             <i class="fas fa-window-close close-menu-question"></i>

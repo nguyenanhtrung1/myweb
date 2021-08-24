@@ -16,7 +16,7 @@
 .form {
   background: #fff;
   width: 35%;
-  height: 680px;
+  height: 700px;
   position: relative;
   animation: registration ease 0.5s;
   border-radius: 5px;
@@ -51,7 +51,7 @@
 .form-dki i {
   position: absolute;
   right: 25px;
-  top: 30px;
+  top: 38%;
   font-size: 1.4rem;
   visibility: hidden;
 }
@@ -133,7 +133,7 @@
 .form2 {
   background: #fff;
   width: 35%;
-  height: 680px;
+  height: 700px;
   position: relative;
   animation: registration ease 0.5s;
   border-radius: 5px;
@@ -401,6 +401,7 @@
   width: 320px;
   left: 30px;
   display: none;
+  animation: clip-path-toRight ease 1s;
 }
 .left-form-product-item1 img.img-active {
   display: flex;
@@ -430,6 +431,7 @@
   width: 320px;
   left: 30px;
   display: none;
+  animation: clip-path-toRight ease 1s;
 }
 .left-form-product-item3 img.img-active {
   display: flex;

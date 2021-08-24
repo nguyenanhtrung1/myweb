@@ -358,6 +358,7 @@
 .filter .right .main-product {
   position: absolute;
   display: none;
+  animation: clip-path-circle ease 2s;
 }
 .filter .right .main-product.change-ss-ip {
   display: block;
@@ -365,6 +366,7 @@
 .filter .right .main-product2 {
   position: absolute;
   display: none;
+  animation: clip-path-circle ease 2s;
 }
 .filter .right .main-product2.change-ss-ip {
   display: block;
@@ -372,6 +374,7 @@
 .filter .right .main-product3 {
   position: absolute;
   display: none;
+  animation: clip-path-circle ease 2s;
 }
 .filter .right .main-product3.change-ss-ip {
   display: block;

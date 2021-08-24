@@ -103,6 +103,7 @@ function setSuccessFor(input){
 function isEmail(email){
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
 // form-login
 
 const open_login = selectAll('.js-login');
@@ -125,6 +126,47 @@ login_bubbleSort.addEventListener('click', (event) => {
     event.stopPropagation();
 })
 
+const form2 = document.getElementById('form2');
+const text = document.getElementById('text');
+const password1 = document.getElementById('password1');
+
+form2.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    checkInputLogin();
+})
+function checkInputLogin(){
+    const textValue = text.value.trim();
+    const password1Value = password1.value.trim();
+
+    if(textValue === ''){
+        setErrorLogin(text);
+    }
+    else{
+        setSuccesslogin(text);
+    }
+
+    if(password1Value === ''){
+        setErrorLogin(password1);
+    }
+    else{
+        setSuccesslogin(password1);
+    }
+
+}
+
+function setErrorLogin(input){
+    const form2Control = input.parentElement; 
+    
+    form2Control.className = ('secson-login error');
+    
+} 
+
+function setSuccesslogin(input){
+    const form2Control = input.parentElement;   
+
+    form2Control.className = ('secson-login success');
+}
 
 //time
 
@@ -350,3 +392,5 @@ const new_tap_product = selectAll('.last-main-product');
 new_tap_product.onclick = () => {
     location.href='./buy-product.html';
 }
+
+//

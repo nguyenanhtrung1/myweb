@@ -346,11 +346,12 @@
     clip-path: circle(150% at 0 0);
   }
 }
-@keyframes clip-path-toRight {
+
+@keyframes clip-path-circle-2 {
   from {
-    clip-path: polygon(0% 0%, 0 0, 0 50%, 0 100%, 0% 100%);
+    clip-path: circle(0% at 50% 50%);
   }
   to {
-    clip-path: polygon(0% 0%, 100% 1%, 150% 50%, 100% 100%, 0% 100%);
+    clip-path: circle(90% at 50% 50%);
   }
 }

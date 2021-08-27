@@ -4,7 +4,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   display: none;
   align-items: center;
   justify-content: center;
@@ -18,8 +18,8 @@
   width: 35%;
   height: 700px;
   position: relative;
-  animation: registration ease 0.5s;
   border-radius: 5px;
+  animation: clip-path-circle-2 ease 1s;
 }
 
 .header-form {
@@ -121,7 +121,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   display: none;
   align-items: center;
   justify-content: center;
@@ -135,8 +135,8 @@
   width: 35%;
   height: 700px;
   position: relative;
-  animation: registration ease 0.5s;
   border-radius: 5px;
+  animation: clip-path-circle-2 ease 1s;
 }
 .login-close {
   position: absolute;
@@ -401,7 +401,7 @@
   width: 320px;
   left: 30px;
   display: none;
-  animation: clip-path-toRight ease 1s;
+  animation: clip-path-circle-2 ease 1s;
 }
 .left-form-product-item1 img.img-active {
   display: flex;
@@ -431,7 +431,7 @@
   width: 320px;
   left: 30px;
   display: none;
-  animation: clip-path-toRight ease 1s;
+  animation: clip-path-circle-2 ease 1s;
 }
 .left-form-product-item3 img.img-active {
   display: flex;

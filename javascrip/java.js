@@ -44,15 +44,16 @@ function checkInputs(){
     const passwordValue = password.value.trim();
     const password_confirmationValue = password_confirmation.value.trim();
 
-    if(fullNameValue === ''){
-        setErrorFor(fullName, 'Tên người dùng không được để trống!');
-    }
-    else{
-        setSuccessFor(fullName);
-    }
+    fullNameValue === '' ? setErrorFor(fullName, 'Tên người dùng không được để trống!') : setSuccessFor(fullName);
 
     if(phoneValue === ''){
         setErrorFor(phone, 'Số điện Thoại không được để trống!');
+    }
+    else if(!isNumber(phoneValue)){
+        setErrorFor(phone, 'Không phải số điện thoại!');
+    }
+    else if(phoneValue.length <= 7){
+        setErrorFor(phone, 'Vui lòng điền đầy đủ số điện thoại!');
     }
     else{
         setSuccessFor(phone);
@@ -68,12 +69,7 @@ function checkInputs(){
         setSuccessFor(email);
     }
 
-    if(passwordValue === ''){
-        setErrorFor(password,'Mật khẩu không chính xác, vui lòng nhập lại!');
-    }
-    else{
-        setSuccessFor(password);
-    }
+    passwordValue === '' ? setErrorFor(password, 'Tên người dùng không được để trống!') : setSuccessFor(password);
 
     if(password_confirmationValue === ''){
         setErrorFor(password_confirmation, 'Vui lòng nhập lại mật khẩu!')
@@ -97,11 +93,13 @@ function setErrorFor(input, message){
 function setSuccessFor(input){
     const formControl = input.parentElement;
 
-    formControl.className = 'form-dki success';
-
+    formControl.className= 'form-dki success';
 }
 function isEmail(email){
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+function isNumber(number){
+    return /^-?[\d.]+(?:e-?\d+)?$/.test(number);
 }
 
 // form-login
@@ -139,20 +137,9 @@ function checkInputLogin(){
     const textValue = text.value.trim();
     const password1Value = password1.value.trim();
 
-    if(textValue === ''){
-        setErrorLogin(text);
-    }
-    else{
-        setSuccesslogin(text);
-    }
+    textValue === '' ? setErrorLogin(text) : setSuccesslogin(text);
 
-    if(password1Value === ''){
-        setErrorLogin(password1);
-    }
-    else{
-        setSuccesslogin(password1);
-    }
-
+    password1Value === '' ? setErrorLogin(password1) : setSuccesslogin(password1);
 }
 
 function setErrorLogin(input){
@@ -394,3 +381,5 @@ new_tap_product.onclick = () => {
 }
 
 //
+
+

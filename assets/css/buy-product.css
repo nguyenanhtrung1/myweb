@@ -1,14 +1,149 @@
+.back {
+  position: relative;
+  margin-top: 80px;
+  cursor: pointer;
+  height: 130px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid rgb(34, 247, 5);
+  border-bottom: 50px solid transparent;
+  position: absolute;
+}
 .back-index {
-  margin-top: 100px;
-  width: 17%;
   height: 45px;
+  width: 320px;
   background: linear-gradient(to right, rgb(34, 247, 5), rgb(26, 148, 255));
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  margin-left: 100px;
+  position: absolute;
+  margin-top: 25px;
 }
 .mess {
   margin-right: 2%;
+}
+.main-buy-product {
+  width: 90%;
+  height: 600px;
+  margin: 0 auto;
+  border: 1px solid rgb(26, 148, 255);
+  overflow: hidden;
+}
+.main-buy-product .left {
+  width: 40%;
+  height: 600px;
+  float: left;
+  position: relative;
+}
+
+.left img {
+  width: 80%;
+  height: auto;
+  margin: 9%;
+  height: auto;
+  cursor: zoom-in;
+}
+
+.main-buy-product .right {
+  width: 60%;
+  float: right;
+}
+.right .header-buy-product {
+  width: 100%;
+  text-align: center;
+}
+.right .price-buy-product {
+  width: 100%;
+  font-size: 1.4rem;
+  margin-left: 20px;
+}
+.right .price-buy-product span {
+  font-size: 1.7rem;
+  color: #d50d15;
+  font-weight: bold;
+}
+.right .gift-buy-product {
+  width: 80%;
+  border: 1px solid #999;
+  margin: 10px auto;
+}
+.right .gift-buy-product p {
+  font-size: 1.4rem;
+  margin-left: 15px;
+  padding-top: 5px;
+}
+.right .gift-buy-product p i {
+  color: #ef6938;
+  padding-right: 10px;
+}
+.right .gift-buy-product li {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.right .gift-buy-product li i {
+  color: #ef6938;
+  padding-right: 10px;
+}
+.right .temp-buy-product li {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+.right .temp-buy-product li i {
+  color: rgb(26, 148, 255);
+  padding-right: 10px;
+}
+.right .order-product-now {
+  width: 100%;
+  margin: 10px 0;
+}
+.right .order-product-now li {
+  display: inline-block;
+  color: white;
+  height: 90px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.right .order-product-now li:first-child {
+  background-color: rgb(86, 238, 66);
+  width: 45%;
+  padding-top: 20px;
+}
+.right .order-product-now li:first-child h3 {
+  text-align: center;
+}
+.right .order-product-now li:first-child p {
+  text-align: center;
+}
+.right .order-product-now li:last-child {
+  background-color: rgb(26, 148, 255);
+  width: 45%;
+  padding-top: 20px;
+  margin-left: 10px;
+}
+.right .order-product-now li:last-child h3 {
+  text-align: center;
+}
+.right .order-product-now li:last-child p {
+  text-align: center;
+}
+.right .address-buy-product li:first-child {
+  font-size: 1.5rem;
+}
+.right .address-buy-product li:not(:first-child) {
+  font-size: 1.2rem;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.right .address-buy-product li i {
+  font-size: 1.6rem;
+  color: rgb(26, 148, 255);
+}
+.footer {
+  margin-top: 100px;
 }

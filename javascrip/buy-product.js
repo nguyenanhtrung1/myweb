@@ -91,8 +91,13 @@ close_menu_question.addEventListener('click', () => {
     main_menu_question.classList.remove('write-question2')
 })
 
-const back_main_product = selectAll('.back-index');
+const back_main_product = selectAll('.back');
 
 back_main_product.onclick = () => {
     history.back();
 }
+
+//zoom-img
+
+
+

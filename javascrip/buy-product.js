@@ -80,6 +80,7 @@ function time() {
     }
 }
 
+
 var main_menu_question = selectAll('.write-question');
 var close_menu_question = selectAll('.close-menu-question');
 var open_menu_question2 = selectAll('.open-menu-question2');
@@ -95,10 +96,10 @@ const back_main_product = selectAll('.back-index');
 const back_triangle = selectAll('.triangle');
 
 back_main_product.onclick = () => {
-    history.back();
+    location.href='./index.html';
 }
 back_triangle.onclick = () => {
-    history.back();
+    location.href='./index.html';
 }
 //zoom-img
 

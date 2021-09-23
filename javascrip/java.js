@@ -380,6 +380,11 @@ new_tap_product.onclick = () => {
     location.href='./buy-product.html';
 }
 
-//
+//TKCT
+const new_TKCT = selectAll('.myaccount');
+new_TKCT.onclick = () => {
+    location.href='./TKCT.html';
+}
+
 
 

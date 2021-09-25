@@ -301,7 +301,7 @@ open_menu_question2.addEventListener('click', () => {
 
 //buy-products
 
-var open_products = selectAlls('.open-product');
+var open_products = selectAlls('.open-product img');
 var main_product = selectAll('.add-product');
 var close_product = selectAll('.close-product');
 var bubbleSort_product = selectAll('.main-form-product')
@@ -315,7 +315,7 @@ close_product.addEventListener('click', () => {
     main_product.classList.remove('form-product2')
     
 })
-main_product.addEventListener('click', () => {
+main_product.addEventListener('click', () => {  
     main_product.classList.remove('form-product2')
 })
 bubbleSort_product.addEventListener('click', (event) => {
@@ -385,6 +385,9 @@ const new_TKCT = selectAll('.myaccount');
 new_TKCT.onclick = () => {
     location.href='./TKCT.html';
 }
+
+//Cart
+
 
 
 

@@ -1,0 +1,73 @@
+.cart_shop {
+  position: fixed;
+  right: 0;
+  top: 65px;
+  bottom: 0;
+  /*display: flex; /*
+  justify-content: center;
+  align-items: center; */
+  background: linear-gradient(to right, rgb(103, 245, 138), rgb(26, 148, 255));
+  width: 35%;
+  color: white;
+  overflow-y: scroll;
+  display: none;
+  z-index: 1000;
+}
+.cart_shop.cart_shop2 {
+  display: block;
+  animation: clip-path-circle-3 0.8s ease;
+}
+.cart_shop i {
+  float: right;
+  padding: 12px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.cart_shop h1 {
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  padding: 10px 0;
+}
+.cart_shop table {
+  width: 90%;
+}
+.cart_shop thead tr th {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+.cart_shop table tbody tr td {
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.cart_shop table tbody tr td img {
+  margin-right: 5px;
+}
+.cart_shop table tbody tr td:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_shop table tbody tr td:last-child {
+  cursor: pointer;
+}
+.cart_shop table tbody tr td input {
+  outline: none;
+  text-align: center;
+  padding: 3px;
+}
+.cart_shop .price-total {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0 20px 20px 0;
+  border-top: 1px solid white;
+}
+.cart_shop .oder {
+  font-size: 1.7rem;
+  background: linear-gradient(to right, #f57914, #f80004);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+}

@@ -65,7 +65,7 @@
 }
 .cart_shop .oder {
   font-size: 1.7rem;
-  background: linear-gradient(to right, #f57914, #f80004);
+  background: linear-gradient(to right, #f57914, #f80004, #f57914);
   padding: 10px;
   text-align: center;
   cursor: pointer;

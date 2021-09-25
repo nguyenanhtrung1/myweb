@@ -18,6 +18,13 @@
   line-height: center;
   padding-top: 11px;
 }
+.header .left ul li h2 {
+  /* color: transparent;
+  background-image: linear-gradient(to right, #51f311, #ebb31b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold; */
+}
 .header .left li {
   display: inline-block;
 }
@@ -388,7 +395,7 @@
 .header-product {
   width: 95%;
   height: 50px;
-  background: linear-gradient(to right, #fd7607, #f73c40);
+  background: linear-gradient(to right, #fd7607, #f73c40, #fd7607);
   margin: 5px 25px;
   display: flex;
   align-items: center;
@@ -638,6 +645,12 @@
 .address-store h1 {
   text-align: center;
   font-size: 3rem;
+  color: transparent;
+  background-image: linear-gradient(to right, #09d609, #23f1f1, #09d609);
+  /* background-image: linear-gradient(to right, #323ff7, #e718cc, #fc4a1a); */
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold;
 }
 .address-store li {
   display: inline-block;
@@ -648,14 +661,14 @@
 .address-store .address-store-with1 {
   width: 35%;
   height: 3px;
-  background: black;
+  background: linear-gradient(to right, #e718cc, #23f1f1);
   margin-left: 14%;
 }
 .address-store .address-store-circle {
   width: 25px;
   height: 25px;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 1px solid #09d609;
   background: white;
   margin: 0 10px;
   position: relative;
@@ -666,7 +679,7 @@
 .address-store .address-store-with2 {
   width: 35%;
   height: 3px;
-  background: black;
+  background: linear-gradient(to right, #23f1f1, #e718cc);
 }
 .footer {
   width: 100%;

@@ -15,38 +15,38 @@
     
 </head>
 <body >
-    <div  class="header">
+    <div class="header">
         <div class="grid">
-                <div class="left">
-                    <ul>
-                        <i class="fas fa-history"></i>
-                        <li class="clock"><h2>Tizi Shop - Di động việt</h2></li>
-                        <li class="connect">Liên Kết</li>
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-instagram-square"></i>
-                        <i class="fas fa-envelope-square"></i>
-                    </ul>
-                </div>	
-                <div class="right">   
-                    <ul>
-                        <img src="./assets/image/tai_khoan.png" alt="" class="image-icon">
-                        <li>
-                            <p class="myaccount">Tài khoản của tôi</p>
-                        </li>
-                        <img src="./assets/image/gio_hang.png" alt="" class="image-icon">
-                        <li>
-                            <p class="mylove">Giỏ Hàng</p>
-                        </li>
-                        <i class="fas fa-sign-in-alt"></i>
-                        <li >
-                            <p class="js-login">Đăng Nhập</p>
-                        </li>
-                        <i class="fas fa-user-plus"></i>
-                        <li>
-                            <p class="js-log-in">Đăng kí</p>
-                        </li>
-                    </ul>
-                </div>
+            <div class="left">
+                <ul>
+                    <img style="width:50px" src="./assets/image/logo-shop.jpg" alt="">
+                    <li class="clock"><h2>Tizi Shop - Di động việt</h2></li>
+                    <li class="connect">Liên Kết</li>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fas fa-envelope-square"></i>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <img src="./assets/image/tai_khoan.png" alt="" class="image-icon">
+                    <li>
+                        <p class="myaccount">Tài khoản của tôi</p>
+                    </li>
+                    <img src="./assets/image/gio_hang.png" alt="" class="image-icon">
+                    <li>
+                        <p class="cart">Giỏ Hàng</p>
+                    </li>
+                    <i class="fas fa-sign-in-alt"></i>
+                    <li>
+                        <p class="js-login">Đăng Nhập</p>
+                    </li>
+                    <i class="fas fa-user-plus"></i>
+                    <li>    
+                        <p class="js-log-in">Đăng kí</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="back">
@@ -55,35 +55,87 @@
         <h2>Quay Lại Trang Chủ</h2> 
         </div>
     </div>
-    <section>
-        <aside>
-            <div class="avatar">
-                <ul>
-                    <li><img class="avatar" src="lab2/user.png" alt=""></li>
-                    <li><a href="#">chờ xác nhận</a></li>
-                    <li><a href="#">Chờ lấy hàng</a></li>
-                    <li><a href="#">Đang gia</a></li>
-                    <li><a href="#">Đã giao</a></li>  
-                </ul>
-            </div>
-        </aside>    
-        <div class="nav">
-            <nav >
-                <ul class="nav">
-                    <li><a href="#">Tất cả</a></li>
-                    <li><a href="#">chờ xác nhận</a></li>
-                    <li><a href="#">Chờ lấy hàng</a></li>
-                    <li><a href="#">Đang gia</a></li>
-                    <li><a href="#">Đã giao</a></li>
-                    <li><a href="#">Đã hủy</a></li>
-                </ul>
-            </nav>
-        </div>
 
-        <article>
+    <div class="body">
+            <div class="avatar">
+                    <ul>
+                        <li class="avatar">
+                            <i class="fas fa-user"></i>
+                         <div class="user"> 
+                            <p class="user">Tên người dùng </p>
+                            <i class="fas fa-pen"></i><a href="#" id="edit"> 
+                                Sửa hồ sơ</a>
+                         </div>
+                         
+                        </li> 
+                        <li id="don"><i class="fas fa-clipboard-list"></i>
+                            <a href="#">Đơn mua</a></li>
+                        <li id=profile><i class="fas fa-user"></i>
+                            <a href="#">Hồ sơ của tôi</a></li>
+                        <li id="none0"><i class="fas fa-bell"></i>
+                            <a href="#">Thông báo</a></li>
+                        <li id="none"><i class="fas fa-ticket-alt"></i>
+                            <a href="#">Voucher</a></li>  
+                    </ul>
+            </div>
                 
-        </article>
-    </section>
+            <article>
+                <div id="don1">
+                    <div class="nav">
+                        <nav >
+                            <ul class="nav">
+                                <li><a href="#">Tất cả</a></li>
+                                <li><a href="#">chờ xác nhận</a></li>
+                                <li><a href="#">Chờ lấy hàng</a></li>
+                                <li><a href="#">Đang giao</a></li>
+                                <li><a href="#">Đã giao</a></li>
+                                <li><a href="#">Đã hủy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+                <div id="none1">
+                    <section>
+                        <div class="error">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <h1>Bạn cần đăng nhập</h1>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="hoso">
+                    <section>
+                        <div>
+                            <h2>Hồ Sơ Của Tôi</h2>
+                            <form >
+                                <label>Tên đăng nhập: </label><br>
+                                <input name="name" type="text" ><br>
+                                <label>Tên của bạn:</label><br>
+                                <input name="name" type="text" ><br>
+                                <label>Email: </label><br>
+                                <input name="email" type="email" value=""><br>
+                                <label>Số điện thoại: </label><br>
+                                <input name="sdt" type="number" ><br>
+                                <label>Giới tính: </label><br>
+                                <input type="radio" name="gioitinh" value="Nam" checked> Nam
+                                <input type="radio" name="gioitinh" value="Nữ"> Nữ
+                                <input type="radio" name="gioitinh" value="Khác"> Khác <br>
+                                <label>Ngày sinh: </label><br>
+                                <input name="name" type="date"><br>
+                                <input type="submit" name="submit" value="Lưu">
+                            </form>
+                            <div id="avatar">
+                                <i class="fas fa-user"></i><br>
+                                <input type="file" value="Chon anh">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        
+    </div>
+    
 
     <!--footer-->
     <div class="footer">
@@ -140,7 +192,7 @@
     </div>
 </div>
     <script  src="./javascrip/tcn.js"></script>
-    <script  src="./javascrip/java.js"></script>
+    
 </body>
 
 </html>

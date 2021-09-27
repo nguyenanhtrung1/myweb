@@ -1,46 +1,130 @@
-section {
-  margin-top: 100px;
+* {
+  color: white;
+}
+
+body {
+  background-image: linear-gradient(#6774db, pink);
+}
+div.body {
   height: 500px;
-  background-color: lightcoral;
+  margin-top: 30px;
 }
 a {
   text-decoration: none;
 }
 
+a:hover {
+  color: red;
+}
 ul {
   list-style-type: none;
+}
+
+div.back {
+  border-bottom: 5px solid white;
+}
+
+div.avatar {
+  float: left;
+  width: 230px;
+  margin-left: 50px;
+}
+
+div.avatar > ul {
+  margin-left: 50px;
+}
+
+div.avatar ul li {
+  margin-bottom: 30px;
+}
+li.avatar {
+  display: flex;
+  border-bottom: 1px solid #efefef;
+  padding: 15px 0;
+}
+div.user {
+  margin: auto 10px;
+}
+
+li.avatar .fa-user {
+  font-size: 50px;
+}
+p.user {
+  margin-bottom: 5px;
+}
+
+article {
+  margin-left: 500px;
 }
 ul.nav {
   display: flex;
 }
-ul.nav > li > a {
-  padding: 25px;
+
+ul.nav li {
+  margin: 20px 32px;
 }
+
 div.nav {
+  margin: 5px 10px;
   border-radius: 20px;
   background-color: rgb(26, 148, 255);
-  float: right;
+  font-size: 24px;
 }
 
-div.avatar {
-  border-radius: 20px;
-  background-color: rgb(89, 174, 202);
+#don1 {
+  display: none;
+}
+
+#none1 {
+  display: none;
+}
+.error {
+  text-align: center;
+}
+
+#hoso {
+  display: none;
+}
+
+#hoso h2 {
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+  font-size: 36px;
+}
+
+form {
+  margin-top: 30px;
+  font-size: 24px;
   float: left;
-  width: 20%;
 }
 
-/* div.avatar>ul {
-  align-items: center;
-} */
-img.avatar {
-  max-width: 500px;
-  display: block;
+input {
+  margin-left: 50px;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  color: black;
 }
 
-article {
-  border: 2px solid lightskyblue;
-  width: 900px;
-  height: 700px;
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
 
-  background-color: cornsilk;
+input[type="submit"] {
+  margin-top: 50px;
+  margin-left: 0;
+  background-color: rgb(26, 148, 255);
+  width: 60px;
+  height: 40px;
+}
+
+#avatar {
+  float: left;
+  text-align: center;
+  font-size: 50px;
+  border-left: 1px solid white;
+  margin-top: 100px;
+  margin-left: 100px;
+  padding: 20px;
 }

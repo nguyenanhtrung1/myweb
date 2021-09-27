@@ -63,7 +63,7 @@ function checkInputs(){
         setErrorFor(email, 'Email không được để trống!');
     }
     else if(!isEmail(emailValue)){
-        setErrorFor(email, 'Email không hợp lệ (@gmail.com)!');
+        setErrorFor(email, 'Email không hợp lệ (@domain.com)!');
     }
     else{
         setSuccessFor(email);
@@ -347,7 +347,6 @@ new_TKCT.onclick = () => {
     location.href='./TKCT.html';
 }
 
-//Cart
 
 
 

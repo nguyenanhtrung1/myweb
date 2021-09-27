@@ -1,7 +1,7 @@
 .back {
   position: relative;
   margin-top: 80px;
-  
+
   height: 130px;
 }
 .triangle {
@@ -43,7 +43,7 @@
   position: relative;
 }
 
-.left img {
+.main-buy-product .left img {
   width: 80%;
   height: auto;
   margin: 9%;

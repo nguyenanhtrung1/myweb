@@ -266,12 +266,31 @@ var open_products = selectAlls('.open-product img');
 var main_product = selectAll('.add-product');
 var close_product = selectAll('.close-product');
 var bubbleSort_product = selectAll('.main-form-product')
-
 open_products.forEach((open_product) => {
-    open_product.onclick = () => {
+    open_product.onclick = (event) => {
         main_product.classList.add('form-product2')
+        var click_add = event.target;
+        var product = click_add.parentElement.parentElement;
+        var change_name = product.querySelector('h3').innerText;
+        change_img = product.querySelector('img').src;
+        add_change_name(change_name, change_img);
+
     }
 })
+function add_change_name(change_name, change_img) {
+    //---------------------------NAME-------------------------
+    var add_h1 = document.createElement('h1');
+     var h1_content = "<h1 style='font-size:32px'>"+change_name+"</h1>";
+    add_h1.innerHTML = h1_content; 
+    var x = selectAll('.right-form-product h1');
+    x.innerHTML = add_h1.innerHTML;
+    //----------------------------IMG--------------------------
+    var add_img = document.createElement('img');
+    add_img.setAttribute('src', change_img);
+    
+    var y = selectAll('.first-img-product');    
+    y.src = add_img.src;
+}
 close_product.addEventListener('click', () => {
     main_product.classList.remove('form-product2')
     
@@ -315,6 +334,7 @@ change_icons.forEach((change_icon,index) => {
         selectAll('.img-active').classList.remove('img-active');
         change_img.classList.add('img-active');
     }
+
 });
 
 // change-3product
@@ -340,11 +360,15 @@ const new_tap_product = selectAll('.last-main-product');
 new_tap_product.onclick = () => {
     location.href='./buy-product.html';
 }
-
 //TKCT
 const new_TKCT = selectAll('.myaccount');
 new_TKCT.onclick = () => {
     location.href='./TKCT.html';
+}
+//new
+const news = selectAll('.news');
+news.onclick = () => {
+    location.href='./tinTuc.html';
 }
 
 

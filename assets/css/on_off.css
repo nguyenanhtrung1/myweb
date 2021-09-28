@@ -371,8 +371,10 @@
 }
 
 .form-product .left-form-product img {
-  max-width: 360px;
+  width: 340px;
+  margin: 20px 20px 0 0;
 }
+
 .left-form-product ul {
   display: flex;
 }
@@ -388,9 +390,8 @@
 }
 .left-form-product-item1 img {
   position: absolute;
-  top: 20px;
-  width: 320px;
-  left: 30px;
+  top: 0px;
+  left: 0px;
   display: none;
   animation: clip-path-circle-2 ease 1s;
 }
@@ -409,7 +410,7 @@
   display: none;
 }
 .left-form-product-item2 img.img-active {
-  display: flex;
+  display: none;
 }
 .left-form-product-item3 {
   width: 30px;
@@ -418,9 +419,8 @@
 }
 .left-form-product-item3 img {
   position: absolute;
-  top: 20px;
-  width: 320px;
-  left: 30px;
+  top: 0px;
+  left: 0px;
   display: none;
   animation: clip-path-circle-2 ease 1s;
 }

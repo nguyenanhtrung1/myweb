@@ -3,9 +3,6 @@
   right: 0;
   top: 65px;
   bottom: 0;
-  /*display: flex; /*
-  justify-content: center;
-  align-items: center; */
   background: linear-gradient(to right, rgb(103, 245, 138), rgb(26, 148, 255));
   width: 35%;
   color: white;
@@ -15,7 +12,7 @@
 }
 .cart_shop.cart_shop2 {
   display: block;
-  animation: clip-path-circle-3 0.8s ease;
+  animation: clip-path-inset-left 0.8s ease;
 }
 .cart_shop i {
   float: right;

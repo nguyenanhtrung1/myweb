@@ -21,16 +21,22 @@ add_cart.forEach((item) => {
     })
 })
 function add_infomation(product_img, name_product, price_product){
-    var add_tr = document.createElement('tr');
+    
+    var open_double_product = document.querySelector('.double_product');
+    var close_double_product = document.querySelector('.double_product i');
 
     var card_item = document.querySelectorAll('tbody tr');
     for(var i = 0; i < card_item.length; i++){
         var product_name = document.querySelectorAll('.tilte');
         if(product_name[i].innerHTML == name_product){
-            alert('sản phẩm của bạn đã có trong giỏ hàng');
+            open_double_product.classList.add('double_product2');
+            close_double_product.addEventListener('click',() => {
+                open_double_product.classList.remove('double_product2');
+            })
             return;
-        }
+        }   
     }
+    var add_tr = document.createElement('tr');
     var tr_content = '<tr><td ><img style="width: 80px" src="'+product_img+'" alt=""><span class="tilte">'+name_product+'</span></td><td><p><span class="prices">'+price_product+'</span><sup>d</sup></p></td><td><input  type="number" value="1" min="1" max="10"></td><td ><span class="delete-card">Xóa</span></td></tr>';
     add_tr.innerHTML = tr_content;
     var cart_table = document.querySelector('tbody');
@@ -54,17 +60,6 @@ function delete_card(){
         
     }
 }
-//------------------------Chane_Sl---------------------------------
-function input_change(){
-    var card_item = document.querySelectorAll('tbody tr');
-    for(var i = 0; i < card_item.length; i++){
-        var input_value = card_item[i].querySelector('input');
-        input_value.addEventListener('change', (event) => {
-            card_total();
-        })
-        
-    }
-}
 //------------------------TOTAL-----------------------------------
 function card_total(){
     var card_item = document.querySelectorAll('tbody tr');
@@ -72,10 +67,21 @@ function card_total(){
     for(var i = 0; i < card_item.length; i++){
         var input_value = card_item[i].querySelector('input').value;
         var product_price = card_item[i].querySelector('.prices').innerText.slice(0,-4);
-        total_core =  product_price*input_value*1000000; 
+        total_core =  product_price * input_value*1000000; 
         total_money += total_core;
     }
     var total = document.querySelector('.price-total span')
     total.innerText = total_money.toLocaleString('de-DE'); 
     input_change(); 
+}
+//------------------------Chane_Sl---------------------------------
+function input_change(){
+    var card_item = document.querySelectorAll('tbody tr');
+    for(var i = 0; i < card_item.length; i++){
+        var input_value = card_item[i].querySelector('input');
+        input_value.addEventListener('change', () => {
+            card_total();
+        })
+        
+    }
 }

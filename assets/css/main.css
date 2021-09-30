@@ -31,7 +31,6 @@
 .header .left i {
   padding-left: 7px;
   cursor: pointer;
-  position: relative;
 }
 
 .header .right {
@@ -85,7 +84,6 @@
 .wrap_search {
   flex: 1;
   height: 100%;
-  position: relative;
 }
 .input-search {
   max-width: 90%;
@@ -113,13 +111,12 @@
 }
 .history-search {
   position: absolute;
-  top: 100%;
   left: 0;
   width: 85%;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 1px 5px #666;
-  top: 115%;
+  top: 70px;
   right: 20px;
   margin-left: 30px;
   display: none;
@@ -158,9 +155,7 @@
   width: 100%;
   height: 100%;
   clip-path: circle(0% at 0 50%);
-  padding-left: 6%;
-  padding-right: 10%;
-  padding-top: 2%;
+  padding: 2% 10% 0 6%;
   max-width: 95%;
 }
 .slider .slide.active {
@@ -169,7 +164,6 @@
 }
 .slider .slide image {
   position: absolute;
-  object-fit: cover;
 }
 .slider .slide .info {
   position: absolute;
@@ -248,12 +242,10 @@
   color: rgb(26, 148, 255);
   text-align: center;
   float: left;
-  box-sizing: border-box;
 }
 .header-menu-left {
   background-color: white;
   height: 60px;
-  box-sizing: border-box;
   border: 10px double rgb(26, 148, 255);
   cursor: pointer;
   line-height: 40px;
@@ -289,7 +281,6 @@
   width: 75%;
   height: 100%;
   display: inline-block;
-  align-items: center;
   cursor: pointer;
 }
 .menu .right li {
@@ -320,7 +311,6 @@
   border-left: 3px solid rgb(26, 148, 255);
   border-bottom: 3px solid rgb(26, 148, 255);
   overflow-y: scroll;
-  z-index: -1;
   float: left;
 }
 
@@ -353,10 +343,8 @@
   color: white;
 }
 .filter .right {
-  display: flex;
   width: 83%;
   float: right;
-  box-sizing: border-box;
   margin: 1.5% 0;
   position: relative;
 }
@@ -373,6 +361,9 @@
   display: none;
   animation: clip-path-circle ease 2s;
 }
+.filter .right .main-product2 img {
+  padding: 15px;
+}
 .filter .right .main-product2.change-ss-ip {
   display: block;
 }
@@ -381,14 +372,11 @@
   display: none;
   animation: clip-path-circle ease 2s;
 }
+.filter .right .main-product3 img {
+  padding: 15px;
+}
 .filter .right .main-product3.change-ss-ip {
   display: block;
-}
-.main-product2 li img {
-  padding: 19px;
-}
-.main-product3 li img {
-  padding: 25px;
 }
 .header-product {
   width: 95%;
@@ -403,24 +391,26 @@
   position: absolute;
 }
 .filter .main-product-iphone {
-  display: flex;
   position: relative;
   top: 65px;
 }
-
 .filter .right .main-product-iphone li {
   display: inline-block;
   border: 1px solid grey;
   height: 350px;
-  margin-left: 2.1%;
-  margin-bottom: 2%;
-  margin-top: 10px;
+  margin: 10px 0 2% 2.1%;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   width: 22%;
 }
-
+.main-product-iphone li img {
+  max-width: 260px;
+  max-height: 260px;
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 100%;
+}
 .main-product-iphone li h3 {
   text-align: center;
 }
@@ -429,6 +419,7 @@
   float: left;
   padding-left: 5%;
 }
+
 .main-product-iphone h4 {
   background: linear-gradient(to right, rgb(103, 245, 138), rgb(26, 148, 255));
   width: 50%;
@@ -443,13 +434,13 @@
   cursor: pointer;
   float: left;
   position: absolute;
-  bottom: 0px;
-}
-.main-product-iphone h4:hover {
-  background: linear-gradient(to right, #f57914, #f80004);
+  bottom: 0;
 }
 .main-product-iphone h4 i {
   padding-left: 4%;
+}
+.main-product-iphone h4:hover {
+  background: linear-gradient(to right, #f57914, #f80004);
 }
 .main-product-iphone h5 {
   position: absolute;
@@ -465,13 +456,6 @@
   font-size: 1.5rem;
   color: white;
   bottom: 0;
-}
-.main-product-iphone li img {
-  max-width: 260px;
-  max-height: 260px;
-  cursor: pointer;
-  max-width: 100%;
-  overflow: hidden;
 }
 .main-product-iphone .list-product2::before {
   content: "";
@@ -644,8 +628,7 @@
   text-align: center;
   font-size: 3rem;
   color: transparent;
-  background-image: linear-gradient(to right, #09d609, #23f1f1, #09d609);
-  /* background-image: linear-gradient(to right, #323ff7, #e718cc, #fc4a1a); */
+  background: linear-gradient(to right, #09d609, #23f1f1, #09d609);
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: bold;

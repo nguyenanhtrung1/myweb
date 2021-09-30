@@ -269,27 +269,35 @@ var bubbleSort_product = selectAll('.main-form-product')
 open_products.forEach((open_product) => {
     open_product.onclick = (event) => {
         main_product.classList.add('form-product2')
+        
         var click_add = event.target;
         var product = click_add.parentElement.parentElement;
         var change_name = product.querySelector('h3').innerText;
-        change_img = product.querySelector('img').src;
-        add_change_name(change_name, change_img);
+        var change_img = product.querySelector('img').src;
+        var change_price = product.querySelector('p').innerText.slice(4,-5);
+        
+        add_change_name(change_name, change_img,change_price);
 
     }
 })
-function add_change_name(change_name, change_img) {
+function add_change_name(change_name, change_img, change_price) {
     //---------------------------NAME-------------------------
     var add_h1 = document.createElement('h1');
-     var h1_content = "<h1 style='font-size:32px'>"+change_name+"</h1>";
+    var h1_content = "<h1 style='font-size:35px'>"+change_name+"</h1>";
     add_h1.innerHTML = h1_content; 
     var x = selectAll('.right-form-product h1');
     x.innerHTML = add_h1.innerHTML;
     //----------------------------IMG--------------------------
     var add_img = document.createElement('img');
     add_img.setAttribute('src', change_img);
-    
     var y = selectAll('.first-img-product');    
     y.src = add_img.src;
+    //----------------------------PRICE--------------------------
+    var add_p = document.createElement('p');
+    var p_content = "<p >"+change_price+"</p>";
+    add_p.innerHTML =  p_content; 
+    var z = selectAll('.discount');
+    z.innerHTML = add_p.innerHTML;
 }
 close_product.addEventListener('click', () => {
     main_product.classList.remove('form-product2')
